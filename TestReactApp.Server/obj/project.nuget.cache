@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "tNQ32nLBnkSOTFKrkvopYZckggvP0/3AnoelcBfv7oyECLtqF1Cs6aNEjcpl6X1Q6OiYThn47ZOliALj2locjw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bencl\\source\\repos\\TestReactApp\\TestReactApp.Server\\TestReactApp.Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bencl\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\8.0.3\\microsoft.aspnetcore.spaproxy.8.0.3.nupkg.sha512",
+    "C:\\Users\\bencl\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\bencl\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\bencl\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\bencl\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\bencl\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\bencl\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
