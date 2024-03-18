@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bencl\\source\\repos\\TestReactApp\\TestReactApp.Server\\TestReactApp.Server.csproj": {}
+    "C:\\Users\\Ben\\source\\repos\\TestReactApp\\TestReactApp.Server\\TestReactApp.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bencl\\source\\repos\\TestReactApp\\TestReactApp.Server\\TestReactApp.Server.csproj": {
+    "C:\\Users\\Ben\\source\\repos\\TestReactApp\\TestReactApp.Server\\TestReactApp.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bencl\\source\\repos\\TestReactApp\\TestReactApp.Server\\TestReactApp.Server.csproj",
+        "projectUniqueName": "C:\\Users\\Ben\\source\\repos\\TestReactApp\\TestReactApp.Server\\TestReactApp.Server.csproj",
         "projectName": "TestReactApp.Server",
-        "projectPath": "C:\\Users\\bencl\\source\\repos\\TestReactApp\\TestReactApp.Server\\TestReactApp.Server.csproj",
-        "packagesPath": "C:\\Users\\bencl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bencl\\source\\repos\\TestReactApp\\TestReactApp.Server\\obj\\",
+        "projectPath": "C:\\Users\\Ben\\source\\repos\\TestReactApp\\TestReactApp.Server\\TestReactApp.Server.csproj",
+        "packagesPath": "C:\\Users\\Ben\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ben\\source\\repos\\TestReactApp\\TestReactApp.Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bencl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ben\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

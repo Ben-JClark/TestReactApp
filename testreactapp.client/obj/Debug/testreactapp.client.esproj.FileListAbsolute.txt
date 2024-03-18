@@ -1,1 +1,2 @@
 C:\Users\bencl\source\repos\TestReactApp\testreactapp.client\obj\Debug\testreactapp.client.esproj.CoreCompileInputs.cache
+C:\Users\Ben\source\repos\TestReactApp\testreactapp.client\obj\Debug\testreactapp.client.esproj.CoreCompileInputs.cache

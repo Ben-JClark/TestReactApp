@@ -12,7 +12,11 @@ function App() {
     const [forecasts, setForecasts] = useState<Forecast[]>();
 
     useEffect(() => {
-        populateWeatherData();
+        try {
+            populateWeatherData();
+        } catch (error) {
+            console.log("Error fetching weather data: ", error);
+        }
     }, []);
 
     const contents = forecasts === undefined
@@ -47,7 +51,7 @@ function App() {
     );
 
     async function populateWeatherData() {
-        const response = await fetch('weatherforecast');
+        const response = await fetch('weatherforecast/short');
         const data = await response.json();
         setForecasts(data);
     }

@@ -18,16 +18,27 @@ namespace TestReactApp.Server.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
+        [HttpGet("short", Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
-            return Enumerablex.Range(1, 5).Select(index => new WeatherForecast
+            return GenerateWeatherForcasts(5);
+        }
+
+        [HttpGet("extended", Name = "GetExtendedWeatherForecast")]
+        public IEnumerable<WeatherForecast> GetExtended()
+        {
+            return GenerateWeatherForcasts(10);
+        }
+
+        private IEnumerable<WeatherForecast> GenerateWeatherForcasts(int count)
+        {
+            Random rng = new Random();
+            return Enumerable.Range(1, count).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+                TemperatureC = rng.Next(-20, 55),
+                Summary = Summaries[rng.Next(Summaries.Length)]
+            }).ToArray();
         }
     }
 }
