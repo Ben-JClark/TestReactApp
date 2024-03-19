@@ -27,7 +27,8 @@ namespace TestReactApp.Server.Controllers
         [HttpGet("extended", Name = "GetExtendedWeatherForecast")]
         public IEnumerable<WeatherForecast> GetExtended()
         {
-            return GenerateWeatherForcasts(10);
+            IEnumerable<WeatherForecast>  WeatherForecast = GenerateWeatherForcasts(10);
+            return WeatherForecast;
         }
 
         private IEnumerable<WeatherForecast> GenerateWeatherForcasts(int count)

@@ -8,14 +8,21 @@ interface Forecast {
     summary: string;
 }
 
+interface Shop {
+    totalSales: number;
+    totalRevenue: number;
+}
+
 function App() {
     const [forecasts, setForecasts] = useState<Forecast[]>();
+    const [shop, setShop] = useState<Shop | null>(null);
 
     useEffect(() => {
         try {
             populateWeatherData();
+            populateShopData();
         } catch (error) {
-            console.log("Error fetching weather data: ", error);
+            console.log("Error fetching the data: ", error);
         }
     }, []);
 
@@ -43,17 +50,32 @@ function App() {
         </table>;
 
     return (
-        <div>
-            <h1 id="tabelLabel">Weather forecast</h1>
-            <p>This component demonstrates fetching data from the server.</p>
-            {contents}
-        </div>
+        <>
+            <div>
+                <h1 id="tabelLabel">Weather forecast</h1>
+                <p>This component demonstrates fetching data from the server.</p>
+                {contents}
+            </div>
+            <div>
+                <h1 id="shopLabel">Shop Shulker Sales</h1>
+                {
+                    shop === null ? (<><p>Loading Shop Data...</p><button onClick={populateShopData}>Reload</button></>) :
+                    (<p>{`A total of ${shop?.totalSales} Shulker shells have been sold, generating ${shop?.totalRevenue} Diamonds`}</p>)
+                }
+            </div>
+        </>
     );
 
     async function populateWeatherData() {
         const response = await fetch('weatherforecast/short');
         const data = await response.json();
         setForecasts(data);
+    }
+    async function populateShopData() {
+        const response = await fetch("https://localhost:7146/shop");
+        console.log("response from shop ", response);
+        const data = await response.json();
+        setShop(data);
     }
 }
 
